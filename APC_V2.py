@@ -351,8 +351,8 @@ y=simbad_query_and_plot(image_2,bkg_2,wcs_2, dao_2, '6h9m5.3s', '+24d20m10s','Tr
 #Decimal_Dec =   0.0
 
 def Calibration():
-   
-    #V candidates
+    #perform a chi-squared calibration procedure between   
+    
     V_cal = np.array(x['V_cal'], dtype=np.float64)
     V_inst = np.array(x['Inst'], dtype=np.float64)
     star_ids_V = np.array(x['ID'])  # SIMBAD IDs for V
